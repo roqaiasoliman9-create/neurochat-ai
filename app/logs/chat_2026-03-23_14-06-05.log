@@ -1,0 +1,6 @@
+2026-03-23 14:06:05,557 | INFO | Chatbot started
+2026-03-23 14:06:05,557 | INFO | Loaded facts: {}
+2026-03-23 14:06:11,189 | INFO | User: My name is Ruqaya
+2026-03-23 14:06:11,688 | INFO | Bot: Nice to meet you, Ruqaya. I'm here to help you learn about AI in a simple and easy-to-understand way. What would you like to start with? Would you like to know more about what AI is, or maybe explore specific areas like machine learning or natural language processing?
+2026-03-23 14:06:14,634 | INFO | User: What is my name?
+2026-03-23 14:06:14,634 | INFO | Bot (from facts): Your name is Ruqaya.

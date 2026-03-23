@@ -1,0 +1,79 @@
+2026-03-23 14:10:43,445 | INFO | Chatbot started
+2026-03-23 14:10:43,445 | INFO | Loaded facts: {}
+2026-03-23 14:10:47,781 | INFO | User: Translate this to Arabic: Artificial intelligence is changing education
+2026-03-23 14:10:48,363 | INFO | Bot: المهارات الحاسوبية الخارقة تغيّر التعليم.
+
+(Note: I translated "Artificial intelligence" to "المهارات الحاسوبية الخارقة", which is a common translation in Arabic. However, some people might translate it to "الذكاء الاصطناعي" or "الذكاء الاصطناعي الحاسوبي". The difference is mainly in the nuance and connotation.)
+
+If you'd like to be more precise with the translation, you could use:
+
+1. "الذكاء الاصطناعي" (Artificial intelligence)
+2. "المهارات الحاسوبية الخارقة" (Artificial intelligence, with an emphasis on computational skills)
+3. "التكنولوجيا الذكية" (Smart technology)
+
+Here's the full translation:
+
+"الذكاء الاصطناعي تغيّر التعليم."
+2026-03-23 14:10:54,676 | INFO | User: Write a Python function to calculate factorial
+2026-03-23 14:10:55,347 | INFO | Bot: Here's a simple Python function to calculate the factorial of a given number:
+
+```python
+def calculate_factorial(n):
+    """
+    Calculate the factorial of a given number.
+
+    Args:
+        n (int): The number to calculate the factorial of.
+
+    Returns:
+        int: The factorial of n.
+
+    Raises:
+        ValueError: If n is a negative number.
+    """
+    if not isinstance(n, int):
+        raise TypeError("Input must be an integer.")
+    if n < 0:
+        raise ValueError("Input must be a non-negative integer.")
+    elif n == 0 or n == 1:
+        return 1
+    else:
+        return n * calculate_factorial(n-1)
+
+# Example usage:
+print(calculate_factorial(5))  # Output: 120
+```
+
+However, this function might cause a stack overflow for large inputs because it uses recursion. We can use an iterative approach instead:
+
+```python
+def calculate_factorial(n):
+    """
+    Calculate the factorial of a given number.
+
+    Args:
+        n (int): The number to calculate the factorial of.
+
+    Returns:
+        int: The factorial of n.
+
+    Raises:
+        ValueError: If n is a negative number.
+    """
+    if not isinstance(n, int):
+        raise TypeError("Input must be an integer.")
+    if n < 0:
+        raise ValueError("Input must be a non-negative integer.")
+    elif n == 0 or n == 1:
+        return 1
+    else:
+        result = 1
+        for i in range(2, n + 1):
+            result *= i
+        return result
+
+# Example usage:
+print(calculate_factorial(5))  # Output: 120
+```
+
+This iterative approach should be more efficient and safe for large inputs.
