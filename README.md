@@ -96,11 +96,19 @@ python -m app.main
 streamlit run streamlit_app.py
 ```
 
----
+
+
 
 ## 📸 Demo
 
-Add screenshots here after running the app
+### Dashboard Overview
+![Dashboard Overview](./screenshots/dashboard.png)
+
+### Chat Demo
+![Chat Demo](./screenshots/chat-demo.png)
+
+### Modes Demo
+![Modes Demo](./screenshots/modes-demo.png)
 
 ---
 
