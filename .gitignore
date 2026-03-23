@@ -1,18 +1,10 @@
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Virtual environment
-venv/
-.venv/
-
-# Environment variables
 .env
-
-# IDE
-.idea/
-
-# OS files
+.venv/
+__pycache__/
+logs/
+chat_*.json
+chat_memory*.json
+*.pyc
 .DS_Store
+.idea/
+user_facts.json
